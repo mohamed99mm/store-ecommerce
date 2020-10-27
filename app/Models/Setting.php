@@ -10,7 +10,7 @@ class Setting extends Model
     use Translatable;
 
     protected $with =['translations'];
-    protected $translatedAttribute = ['value'];
+    protected $translatedAttributes = ['value'];
 
     protected $fillable = ['key','is_translatable','plain_value'];
 
@@ -26,11 +26,15 @@ class Setting extends Model
         }
     }
 
-    public static function set(int $key, $value)
+    public static function set($key, $value)
     {
-         if($key == 'translatable')
+         if($key === 'translatable')
          {
              return static::setTranslatableSettings($value);
+         }
+         if(is_array($value))
+         {
+             $value =json_encode($value);
          }
          static::updateOrcreate(['Key'=>$key] ,['plain_value'=> $value]);
     }

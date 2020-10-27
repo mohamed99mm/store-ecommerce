@@ -3,83 +3,78 @@
         <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
 
             <li class="nav-item active"><a href=""><i class="la la-mouse-pointer"></i><span
-                            class="menu-title" data-i18n="nav.add_on_drag_drop.main">الرئيسية </span></a>
+                            class="menu-title" data-i18n="nav.add_on_drag_drop.main">{{__('admin/sidebar.Main')}} </span></a>
             </li>
 
             <li class="nav-item  open ">
                 <a href=""><i class="la la-home"></i>
-                    <span class="menu-title" data-i18n="nav.dash.main">لغات الموقع </span>
+                    <span class="menu-title" data-i18n="nav.dash.main">{{__('admin/sidebar.SiteLanguages')}} </span>
                     <span
                             class="badge badge badge-info badge-pill float-right mr-2"></span>
                 </a>
                 <ul class="menu-content">
                     <li class="active"><a class="menu-item" href=""
-                                          data-i18n="nav.dash.ecommerce"> عرض الكل </a>
+                                          data-i18n="nav.dash.ecommerce">{{__('admin/sidebar.ShowAll')}}  </a>
                     </li>
-                    <li><a class="menu-item" href="" data-i18n="nav.dash.crypto">أضافة
-                            لغة جديده </a>
+                    <li><a class="menu-item" href="" data-i18n="nav.dash.crypto">{{__('admin/sidebar.AddNewLanguage')}}</a>
                     </li>
                 </ul>
             </li>
 
 
             <li class="nav-item"><a href=""><i class="la la-group"></i>
-                    <span class="menu-title" data-i18n="nav.dash.main">الاقسام الرئيسيه </span>
+                    <span class="menu-title" data-i18n="nav.dash.main">{{__('admin/sidebar.MainSections')}} </span>
                     <span
                             class="badge badge badge-danger badge-pill float-right mr-2"></span>
                 </a>
                 <ul class="menu-content">
                     <li class="active"><a class="menu-item" href=""
-                                          data-i18n="nav.dash.ecommerce"> عرض الكل </a>
+                                          data-i18n="nav.dash.ecommerce"> {{__('admin/sidebar.ShowAll')}} </a>
                     </li>
-                    <li><a class="menu-item" href="" data-i18n="nav.dash.crypto">أضافة
-                            قسم جديد </a>
+                    <li><a class="menu-item" href="" data-i18n="nav.dash.crypto"> {{__('admin/sidebar.AddNewSection')}}</a>
                     </li>
                 </ul>
             </li>
 
             <li class="nav-item"><a href=""><i class="la la-group"></i>
-                    <span class="menu-title" data-i18n="nav.dash.main">الاقسام الفرعية   </span>
+                    <span class="menu-title" data-i18n="nav.dash.main">{{__('admin/sidebar.SubSections')}} </span>
                     <span
                             class="badge badge badge-danger badge-pill float-right mr-2">400</span>
                 </a>
                 <ul class="menu-content">
                     <li class="active"><a class="menu-item" href=""
-                                          data-i18n="nav.dash.ecommerce"> عرض الكل </a>
+                                          data-i18n="nav.dash.ecommerce">{{__('admin/sidebar.ShowAll')}}  </a>
                     </li>
-                    <li><a class="menu-item" href="" data-i18n="nav.dash.crypto">أضافة
-                            قسم فرعي جديد </a>
+                    <li><a class="menu-item" href="" data-i18n="nav.dash.crypto">{{__('admin/sidebar.AddNewSubSection')}}  </a>
                     </li>
                 </ul>
             </li>
 
             <li class="nav-item"><a href=""><i class="la la-male"></i>
-                    <span class="menu-title" data-i18n="nav.dash.main">المتاجر  </span>
+                    <span class="menu-title" data-i18n="nav.dash.main">{{__('admin/sidebar.Stores')}}  </span>
                     <span
                             class="badge badge badge-success badge-pill float-right mr-2"></span>
                 </a>
                 <ul class="menu-content">
                     <li class="active"><a class="menu-item" href=""
-                                          data-i18n="nav.dash.ecommerce"> عرض الكل </a>
+                                          data-i18n="nav.dash.ecommerce"> {{__('admin/sidebar.ShowAll')}} </a>
                     </li>
-                    <li><a class="menu-item" href="" data-i18n="nav.dash.crypto">أضافة
-                            متجر  </a>
+                    <li><a class="menu-item" href="" data-i18n="nav.dash.crypto">{{__('admin/sidebar.AddNewStore')}}</a>
                     </li>
                 </ul>
             </li>
 
 
             <li class="nav-item"><a href=""><i class="la la-male"></i>
-                    <span class="menu-title" data-i18n="nav.dash.main">الطلاب  </span>
+                    <span class="menu-title" data-i18n="nav.dash.main">{{__('admin/sidebar.Student')}}  </span>
                     <span
                             class="badge badge badge-warning  badge-pill float-right mr-2"></span>
                 </a>
                 <ul class="menu-content">
                     <li class="active"><a class="menu-item" href=""
-                                          data-i18n="nav.dash.ecommerce"> عرض الكل </a>
+                                          data-i18n="nav.dash.ecommerce"> {{__('admin/sidebar.ShowAll')}}  </a>
                     </li>
-                    <li><a class="menu-item" href="" data-i18n="nav.dash.crypto">أضافة
-                            طالب </a>
+                    <li><a class="menu-item" href="" data-i18n="nav.dash.crypto">{{__('admin/sidebar.AddNewStudent')}} </a>
                     </li>
                 </ul>
             </li>
@@ -87,30 +82,31 @@
 
             <li class="nav-item">
                 <a href=""><i class="la la-male"></i>
-                    <span class="menu-title" data-i18n="nav.dash.main">تذاكر المراسلات   </span>
+                    <span class="menu-title" data-i18n="nav.dash.main">{{__('admin/sidebar.CorrespondenceTickets')}}  </span>
                     <span
                             class="badge badge badge-danger  badge-pill float-right mr-2">0</span>
                 </a>
                 <ul class="menu-content">
                     <li class="active"><a class="menu-item" href=""
-                                          data-i18n="nav.dash.ecommerce"> تذاكر الطلاب </a>
+                                          data-i18n="nav.dash.ecommerce"> {{__('admin/sidebar.StudentTickets')}}  </a>
                     </li>
                 </ul>
             </li>
 
 
             <li class=" nav-item"><a href="#"><i class="la la-television"></i><span class="menu-title"
-                                                                                    data-i18n="nav.templates.main">الاعدادات</span></a>
+                                                                                    data-i18n="nav.templates.main">{{__('admin/sidebar.settings')}}</span></a>
                 <ul class="menu-content">
-                    <li><a class="menu-item" href="#" data-i18n="nav.templates.vert.main">وسائل التوصيل </a>
+                    <li><a class="menu-item" href="#" data-i18n="nav.templates.vert.main">{{__('admin/sidebar.ShippingMethods')}}</a>
                         <ul class="menu-content">
-                            <li><a class="menu-item" href="../vertical-menu-template"
-                                   data-i18n="nav.templates.vert.classic_menu">توصيل مجانى </a>
+                            <li><a class="menu-item" href="{{route('edit.shipping.methods','free')}}"
+                                   data-i18n="nav.templates.vert.classic_menu">{{__('admin/sidebar.FreeShipping')}}</a>
                             </li>
-                            <li><a class="menu-item" href="../vertical-modern-menu-template">توصيل داخلى</a>
+                            <li><a class="menu-item" href="{{route('edit.shipping.methods','inner')}}"
+                                   data-i18n="nav.templates.vert.compact_menu">{{__('admin/sidebar.InnerShipping')}}</a>
                             </li>
-                            <li><a class="menu-item" href="../vertical-compact-menu-template"
-                                   data-i18n="nav.templates.vert.compact_menu">توصيل خارجى</a>
+                            <li><a class="menu-item" href="{{route('edit.shipping.methods','outer')}}"
+                                   data-i18n="nav.templates.vert.compact_menu">{{__('admin/sidebar.OuterShipping')}}</a>
                             </li>
 
 

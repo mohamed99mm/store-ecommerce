@@ -73,7 +73,7 @@
 
                                         </div>
                                         <div class="col-5 text-right">
-                                            <h4>$1.2</h4>
+                                            <h4>200</h4>
 
                                         </div>
                                     </div>
@@ -95,11 +95,11 @@
                                             <h1><i class="cc XRP info font-large-2" title="XRP"></i></h1>
                                         </div>
                                         <div class="col-5 pl-2">
-                                            <h4>عدد العماء</h4>
+                                            <h4>عدد العملاء</h4>
 
                                         </div>
                                         <div class="col-5 text-right">
-                                            <h4>$1.2</h4>
+                                            <h4>2000</h4>
 
                                         </div>
                                     </div>
