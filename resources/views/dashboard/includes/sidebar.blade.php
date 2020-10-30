@@ -66,7 +66,7 @@
 
 
             <li class="nav-item"><a href=""><i class="la la-male"></i>
-                    <span class="menu-title" data-i18n="nav.dash.main">{{__('admin/sidebar.Student')}}  </span>
+                    <span class="menu-title" data-i18n="nav.dash.main">{{__('admin/sidebar.Students')}}  </span>
                     <span
                             class="badge badge badge-warning  badge-pill float-right mr-2"></span>
                 </a>

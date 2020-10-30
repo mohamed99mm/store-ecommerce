@@ -1,28 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="461c4da6-124d-44e1-b0ae-3704fae21cab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Helpers/general.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/SettingsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/AdminDatabaseSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/ar/admin/sidebar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/ar/auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/ar/dashboard.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/ar/pagination.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/ar/passwords.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/ar/validation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/en/admin/sidebar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/settings/shippings/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/ar/admin/edit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/en/admin/edit.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Setting.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Setting.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/laravellocalization.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/laravellocalization.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/SettingsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/SettingsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/SettingDatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/SettingDatabaseSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/dashboard/includes/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/includes/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/settings/shippings/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/settings/shippings/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +40,12 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -158,22 +168,22 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/lang/en" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Compressed/black-dashboard-laravel-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\app\Models" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\resources\lang\en\admin" />
       <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\resources\lang\en" />
       <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\resources\lang\ar\admin" />
       <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\resources\lang\ar" />
       <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\resources\views\dashboard\settings\shippings" />
-      <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\resources\views\dashboard" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\app\Models" />
     </key>
   </component>
   <component name="RunManager">
@@ -200,34 +210,55 @@
       <workItem from="1603024114118" duration="26150000" />
       <workItem from="1603231197318" duration="12691000" />
       <workItem from="1603314650807" duration="7523000" />
-      <workItem from="1603333889223" duration="12236000" />
+      <workItem from="1603333889223" duration="18597000" />
+      <workItem from="1603973031837" duration="11264000" />
+      <workItem from="1604070496684" duration="1275000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="SHOW_DIRTY_RECURSIVELY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="498" y="192" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper" timestamp="1603834443737">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="498" y="192" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper/0.0.1536.824@0.0.1536.824" timestamp="1603834443737" />
     <state x="574" y="94" key="#com.intellij.ide.util.MemberChooser" timestamp="1603204708579">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="94" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1603204708579" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1603302529818">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1603997036983">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1603302529818" />
-    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1603556853210">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1603997036983" />
+    <state x="471" y="135" key="NewPhpClassDialog" timestamp="1603973339919">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1603556853210" />
-    <state x="277" y="57" key="SettingsEditor" timestamp="1603231149641">
+    <state x="471" y="135" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1603973339919" />
+    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1603973346632">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1603231149641" />
+    <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1603973346632" />
+    <state x="277" y="57" key="SettingsEditor" timestamp="1603834522996">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1603834522996" />
     <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603832155500">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
