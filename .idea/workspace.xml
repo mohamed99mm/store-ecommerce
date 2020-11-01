@@ -20,9 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="461c4da6-124d-44e1-b0ae-3704fae21cab" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/lang/ar/admin/content.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/ar/admin/header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/en/admin/content.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/en/admin/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/SettingsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/SettingsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/ShippingRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/ShippingRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/admin/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/admin/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/includes/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/includes/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,22 +171,22 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Compressed/black-dashboard-laravel-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/lang/en/admin" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="Laravel.SettingsForm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\app\Models" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\resources\lang\en\admin" />
       <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\resources\lang\en" />
       <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\resources\lang\ar\admin" />
       <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\resources\lang\ar" />
       <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\resources\views\dashboard\settings\shippings" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\app\Models" />
     </key>
   </component>
   <component name="RunManager">
@@ -208,7 +216,7 @@
       <workItem from="1603333889223" duration="18597000" />
       <workItem from="1603973031837" duration="11264000" />
       <workItem from="1604070496684" duration="1275000" />
-      <workItem from="1604095146476" duration="6843000" />
+      <workItem from="1604095146476" duration="12236000" />
     </task>
     <servers />
   </component>
@@ -248,10 +256,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="471" y="135" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1603973339919" />
-    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1603973346632">
+    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1604191385057">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1603973346632" />
+    <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1604191385057" />
     <state x="277" y="57" key="SettingsEditor" timestamp="1604095160545">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

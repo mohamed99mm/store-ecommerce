@@ -18,6 +18,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale(),
 {
     Route::group(['prefix'=>'admin','namespace'=>'Dashboard','middleware' =>'auth:admin'],function()
     {
+        Route::get('/logout','LoginController@logout')->name('admin.logout');
         Route::get('/','DashboardController@index')-> name('admin.dashboard');
         // the first page admin visits if authenticated
         Route::group(['prefix'=> 'settings'],function()
