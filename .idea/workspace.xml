@@ -20,17 +20,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="461c4da6-124d-44e1-b0ae-3704fae21cab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/lang/ar/admin/content.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/ar/admin/header.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/en/admin/content.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/en/admin/header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/ProfileController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/ProfileRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/CategoryTranslation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/CategoryFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_04_08_123314_create_categories_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_04_08_123908_create_categoory_translations_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/CategoryDatabaseSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/profile/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/admin/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/admin/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ar/admin/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/admin/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/admin/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/admin/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/dashboard/includes/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/includes/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,24 +176,27 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/lang/en/admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="Laravel.SettingsForm" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\resources\lang\en\admin" />
-      <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\resources\lang\en" />
-      <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\resources\lang\ar\admin" />
-      <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\resources\lang\ar" />
-      <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\resources\views\dashboard\settings\shippings" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\app\Models" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\resources\lang\ar\admin" />
+      <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\resources\views\dashboard\profile" />
+      <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\resources\lang\en\admin" />
+      <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\resources\lang\en" />
+      <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\resources\lang\ar" />
     </key>
   </component>
   <component name="RunManager">
@@ -195,6 +205,7 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -216,7 +227,56 @@
       <workItem from="1603333889223" duration="18597000" />
       <workItem from="1603973031837" duration="11264000" />
       <workItem from="1604070496684" duration="1275000" />
-      <workItem from="1604095146476" duration="12236000" />
+      <workItem from="1604095146476" duration="18986000" />
+      <workItem from="1605093703751" duration="1312000" />
+      <workItem from="1605096930718" duration="1211000" />
+      <workItem from="1605188555425" duration="23834000" />
+      <workItem from="1606873116523" duration="1152000" />
+      <workItem from="1606986998308" duration="613000" />
+      <workItem from="1606999793811" duration="661000" />
+      <workItem from="1607463969838" duration="122000" />
+      <workItem from="1609062211232" duration="318000" />
+      <workItem from="1609330276823" duration="109000" />
+      <workItem from="1609353908565" duration="6538000" />
+      <workItem from="1609969896007" duration="11201000" />
+      <workItem from="1610206072895" duration="1840000" />
+      <workItem from="1610278031580" duration="633000" />
+      <workItem from="1610307161170" duration="2049000" />
+      <workItem from="1610323302723" duration="9045000" />
+      <workItem from="1610533617891" duration="1048000" />
+      <workItem from="1610577896409" duration="1880000" />
+      <workItem from="1610649357896" duration="5533000" />
+      <workItem from="1610754481765" duration="1945000" />
+      <workItem from="1612481104656" duration="382000" />
+      <workItem from="1613828225353" duration="3541000" />
+      <workItem from="1613834740110" duration="171000" />
+      <workItem from="1613868796993" duration="1924000" />
+      <workItem from="1617541673386" duration="1205000" />
+      <workItem from="1617884402345" duration="7667000" />
+      <workItem from="1618664343024" duration="604000" />
+      <workItem from="1618664965915" duration="11346000" />
+      <workItem from="1627837126824" duration="2676000" />
+      <workItem from="1628113321077" duration="1160000" />
+      <workItem from="1628170466622" duration="1333000" />
+      <workItem from="1628299135781" duration="40000" />
+      <workItem from="1628299645308" duration="90000" />
+      <workItem from="1628300659044" duration="132000" />
+      <workItem from="1628503381977" duration="92000" />
+      <workItem from="1631622644936" duration="262000" />
+      <workItem from="1631623659232" duration="139000" />
+      <workItem from="1631709401737" duration="2377000" />
+      <workItem from="1631729745922" duration="1932000" />
+      <workItem from="1632064910490" duration="268000" />
+      <workItem from="1632239814890" duration="896000" />
+      <workItem from="1632241369241" duration="1140000" />
+      <workItem from="1632680333888" duration="6594000" />
+      <workItem from="1632749737767" duration="595000" />
+      <workItem from="1632930890124" duration="4972000" />
+      <workItem from="1633023462777" duration="590000" />
+      <workItem from="1633025311154" duration="884000" />
+      <workItem from="1633108134957" duration="445000" />
+      <workItem from="1637087001307" duration="4668000" />
+      <workItem from="1637092370747" duration="1548000" />
     </task>
     <servers />
   </component>
@@ -240,41 +300,9 @@
     <option name="SHOW_DIRTY_RECURSIVELY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="498" y="192" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper" timestamp="1603834443737">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1633107908415">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="498" y="192" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper/0.0.1536.824@0.0.1536.824" timestamp="1603834443737" />
-    <state x="574" y="94" key="#com.intellij.ide.util.MemberChooser" timestamp="1603204708579">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="574" y="94" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1603204708579" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1603997036983">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1603997036983" />
-    <state x="471" y="135" key="NewPhpClassDialog" timestamp="1603973339919">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="471" y="135" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1603973339919" />
-    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1604191385057">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1604191385057" />
-    <state x="277" y="57" key="SettingsEditor" timestamp="1604095160545">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1604095160545" />
-    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603832155500">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1603832155500" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1604096292380">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1604096292380" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1603830964267">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1603830964267" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1633107908415" />
   </component>
 </project>

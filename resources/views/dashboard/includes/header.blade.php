@@ -37,12 +37,35 @@
                             <span class="avatar avatar-online">
                   <img  style="height: 35px;" src="{{asset('assets/admin/images/ico/mohamed.jpg')}}" alt="avatar"><i></i></span>
                         </a>
-                        <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href=""><i
+                        <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="{{route('edit.profile')}}"><i
                                         class="ft-user"></i> {{__('admin/header.UpdateProfile')}} </a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="{{route('admin.logout')}}"><i class="ft-power"></i> {{__('admin/header.Logout')}} </a>
                         </div>
                     </li>
+
+                    <li class="dropdown dropdown-user nav-item">
+                        <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
+                <span class="mr-1">
+                  <span
+                      class="user-name text-bold-700"> {{__('admin/header.language')}}</span>
+                </span>
+
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+
+                            @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+
+                                <a  class="dropdown-item" rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
+                                    {{ $properties['native'] }}
+                                </a>
+
+
+                            @endforeach
+
+                        </div>
+                    </li>
+
 
                     <li class="dropdown dropdown-notification nav-item">
                         <a class="nav-link nav-link-label" href="#" data-toggle="dropdown"><i class="ficon ft-bell"></i>

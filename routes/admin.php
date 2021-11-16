@@ -26,9 +26,18 @@ Route::group(['prefix' => LaravelLocalization::setLocale(),
             Route::get('shipping-methods/{type}','SettingsController@editShippingMethod') ->name('edit.shipping.methods');
             Route::put('shipping-methods/{id}','SettingsController@updateShippingMethod') ->name('update.shipping.methods');
         });
+
+        Route::group(['prefix'=> 'profile'],function()
+        {
+            Route::get('edit','ProfileController@editProfile') ->name('edit.profile');
+            Route::put('update','ProfileController@updateProfile') ->name('update.profile');
+         //   Route::put('update/password','ProfileController@updatePassword') ->name('update.profile.password');
+        });
+
     });
     Route::group(['prefix'=>'admin','namespace'=>'Dashboard','middleware'=>'guest:admin'],function()
     {
+
 
         Route::get('login','loginController@login')->name('admin.login');
         Route::post('login','loginController@postLogin')->name('admin.post.login');
