@@ -20,25 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="461c4da6-124d-44e1-b0ae-3704fae21cab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/MainCategoriesController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/SubCategoriesController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/MainCategoryRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/SubCategoryRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/SubCategoryDatabaseSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/categories/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/categories/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/categories/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/subCategories/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/subCategories/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/subCategories/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Helpers/general.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helpers/general.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/ProfileController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/includes/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/includes/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -283,6 +265,7 @@
       <workItem from="1648044604693" duration="183000" />
       <workItem from="1648044806394" duration="10456000" />
       <workItem from="1648223311394" duration="7425000" />
+      <workItem from="1651750809804" duration="1600000" />
     </task>
     <servers />
   </component>
