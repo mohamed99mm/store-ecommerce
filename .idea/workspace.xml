@@ -20,7 +20,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="461c4da6-124d-44e1-b0ae-3704fae21cab" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/MainCategoriesController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/SubCategoriesController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/MainCategoryRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/SubCategoryRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/SubCategoryDatabaseSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/categories/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/categories/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/categories/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/subCategories/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/subCategories/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/subCategories/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Helpers/general.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helpers/general.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/ProfileController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/includes/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/includes/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,11 +181,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Requests" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -175,11 +193,11 @@
       <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\app\Models" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\resources\lang\ar\admin" />
-      <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\resources\views\dashboard\profile" />
-      <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\resources\lang\en\admin" />
-      <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\resources\lang\en" />
-      <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\resources\lang\ar" />
+      <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\app\Http\Requests" />
+      <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\database\seeds" />
+      <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\resources\views\dashboard" />
+      <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\app\Http\Controllers\Dashboard" />
+      <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\resources\views\dashboard\categories" />
     </key>
   </component>
   <component name="RunManager">
@@ -259,7 +277,12 @@
       <workItem from="1633025311154" duration="884000" />
       <workItem from="1633108134957" duration="445000" />
       <workItem from="1637087001307" duration="4668000" />
-      <workItem from="1637092370747" duration="3310000" />
+      <workItem from="1637092370747" duration="26201000" />
+      <workItem from="1637697667318" duration="8180000" />
+      <workItem from="1648033430384" duration="140000" />
+      <workItem from="1648044604693" duration="183000" />
+      <workItem from="1648044806394" duration="10456000" />
+      <workItem from="1648223311394" duration="7425000" />
     </task>
     <servers />
   </component>
@@ -283,13 +306,21 @@
     <option name="SHOW_DIRTY_RECURSIVELY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1633107908415">
+    <state x="277" y="57" key="SettingsEditor" timestamp="1650604467428">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1633107908415" />
-    <state x="277" y="57" key="SettingsEditor" timestamp="1637095240922">
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1650604467428" />
+    <state x="478" y="0" width="579" height="824" key="find.popup" timestamp="1648222678867">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1637095240922" />
+    <state x="478" y="0" width="579" height="824" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1648222678867" />
+    <state x="410" y="139" width="700" height="530" key="recent.locations.popup" timestamp="1648222680522">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="410" y="139" width="700" height="530" key="recent.locations.popup/0.0.1536.824@0.0.1536.824" timestamp="1648222680522" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1648223032185">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1648223032185" />
   </component>
 </project>
