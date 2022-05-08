@@ -22,13 +22,14 @@ class SubCategoriesController extends Controller
     {
      //get specific categories and its translations
 
-        $SubCategory = Category::orderBy('id','DESC')->find($id);
+        $category = Category::orderBy('id','DESC')->find($id);
 
-        if(!$SubCategory)
+        if(!$category)
         {
             return redirect()->route('admin.subCategories')->with(['error'=> 'هذا القسم غير موجود']);
         }
-        return view('dashboard.subCategories.edit',compact('SubCategory'));
+        $categories = Category::parent()->orderBy('id','DESC')->get();
+        return view('dashboard.subCategories.edit',compact('category', 'categories'));
     }
 
     public function create()
@@ -78,7 +79,7 @@ class SubCategoriesController extends Controller
 
          DB::commit();
 
-         return redirect()->route('admin.subCategories')->with(['success'=>'تم انشاء قسم رئيسى جديد بنجاح']);
+         return redirect()->route('admin.subCategories')->with(['success'=>'تم انشاء قسم فرعى  جديد بنجاح']);
      }catch (\Exception $ex)
         {
            DB::rollback();
@@ -86,7 +87,7 @@ class SubCategoriesController extends Controller
         }
     }
 
-    public function update($id,MainCategoryRequest $request)
+    public function update($id,SubCategoryRequest $request)
     {
        try{
 
