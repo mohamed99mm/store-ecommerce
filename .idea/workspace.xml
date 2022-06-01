@@ -20,24 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="461c4da6-124d-44e1-b0ae-3704fae21cab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/BrandsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/BrandRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Brand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/BrandTranslation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2022_05_30_064552_create_brands_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2022_05_30_064753_create_brand_transaltion_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2022_06_01_082217_add_photo_column_to_brands_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/ar/admin/brand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/en/admin/brand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/brands/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/brands/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/brands/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/brands/gLeMLaQOa1Ct7l2kPCwwykPCxp2jBC89QmuxXOig.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/brands/qlfla0PNHvvAITHOw82YG4Ijzi6p4LIMTA8vsshT.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Helpers/general.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helpers/general.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_04_08_123314_create_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_04_08_123314_create_categories_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/includes/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/includes/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/brands/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/brands/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +169,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/dashboard/brands" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/assets/images/brands" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -192,11 +178,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="I:\phpstorm work\store-ecommerce\public\assets\images\brands" />
       <recent name="I:\phpstorm work\store-ecommerce\resources\views\dashboard\brands" />
       <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\app\Http\Requests" />
       <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\database\seeds" />
       <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\resources\views\dashboard" />
-      <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\app\Http\Controllers\Dashboard" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="I:\phpstorm work\store-ecommerce\app\Http\Controllers\Dashboard" />
