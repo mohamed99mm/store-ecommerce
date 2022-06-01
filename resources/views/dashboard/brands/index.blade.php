@@ -63,7 +63,7 @@
                                                         <td>{{$brand -> getActive()}}</td>
 {{--                                                        <td>{{get_default_lang()}}</td>--}}
 
-                                                        <td> <img style="width: 150px; height: 100px;" src=""></td>
+                                                        <td> <img style="width: 150px; height: 100px;" src="{{$brand->photo}}"></td>
 
                                                         <td>
                                                             <div class="btn-group" role="group"
