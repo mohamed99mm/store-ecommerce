@@ -27,6 +27,7 @@ class BrandsController extends Controller
 
     public function store(BrandRequest $request)
     {
+       return $request;
 
         try {
             DB::beginTransaction();

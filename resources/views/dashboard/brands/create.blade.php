@@ -48,7 +48,7 @@
                                             @csrf
                                             <div class="form-group">
                                                 <label> {{__('admin/brand.photo')}} </label>
-                                                <label id="projectinput7" class="file center-block">
+                                                <label for="projectinput7" class="file center-block">
                                                     <input type="file" id="file" name="photo">
                                                     <span class="file-custom"></span>
                                                 </label>
@@ -62,36 +62,36 @@
                                                 <h4 class="form-section"><i class="ft-home"></i>{{__('admin/brand.addbrand')}} </h4>
 
 
-                                                        <div class="row">
-                                                            <div class="col-md-6">
-                                                                <div class="form-group">
-                                                                    <label for="projectinput1"> {{__('admin/brand.name')}} </label>
-                                                                    <input type="text" id="name"
-                                                                           class="form-control"
-                                                                           placeholder="  "
-                                                                           value="{{old('name')}}"
-                                                                           name="name" required>
-                                                                    @error("name")
-                                                                    <span class="text-danger">{{$message}}</span>
-                                                                    @enderror
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <div class="form-group mt-1">
-                                                                    <input type="checkbox" value="1"
-                                                                           name="is_active"
-                                                                           id="switcheryColor4"
-                                                                           class="switchery" data-color="success"
-                                                                           checked />
-                                                                    <label for="switcheryColor4"
-                                                                           class="card-title ml-1">الحالة </label>
-
-                                                                    @error("is_active")
-                                                                    <span class="text-danger"> {{$message}}</span>
-                                                                     @enderror
-                                                                </div>
-                                                            </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="projectinput1"> {{__('admin/brand.name')}} </label>
+                                                            <input type="text" id="name"
+                                                                   class="form-control"
+                                                                   placeholder="  "
+                                                                   value="{{old('name')}}"
+                                                                   name="name" required>
+                                                            @error("name")
+                                                            <span class="text-danger">{{$message}}</span>
+                                                            @enderror
                                                         </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group mt-1">
+                                                            <input type="checkbox" value="1"
+                                                                   name="is_active"
+                                                                   id="switcheryColor4"
+                                                                   class="switchery" data-color="success"
+                                                                   checked />
+                                                            <label for="switcheryColor4"
+                                                                   class="card-title ml-1">الحالة </label>
+
+                                                            @error("is_active")
+                                                            <span class="text-danger"> {{$message}}</span>
+                                                            @enderror
+                                                        </div>
+                                                    </div>
+                                                </div>
 
                                             </div>
 

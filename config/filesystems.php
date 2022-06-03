@@ -50,14 +50,14 @@ return [
 
         'public' => [
             'driver' => 'local',
-            'root' => public_path('assets/images/brands'),
+            'root' => storage_path('app/public'),
             'url' => env('APP_URL').'/storage',
             'visibility' => 'public',
         ],
         'brands' => [
             'driver' => 'local',
-            'root' => public_path('assets/images/brands/')  ,
-            'url' => env('APP_URL') . '/storage',
+            'root' => public_path('assets/images/brands'),
+            'url' => env('APP_URL').'/storage',
             'visibility' => 'public',
         ],
         's3' => [
