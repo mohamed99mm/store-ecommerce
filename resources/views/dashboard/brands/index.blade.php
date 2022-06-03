@@ -5,13 +5,13 @@
         <div class="content-wrapper">
             <div class="content-header row">
                 <div class="content-header-left col-md-6 col-12 mb-2">
-                    <h3 class="content-header-title"> الاقسام الفرعيه </h3>
+                    <h3 class="content-header-title"> {{__('admin/brand.brand')}} </h3>
                     <div class="row breadcrumbs-top">
                         <div class="breadcrumb-wrapper col-12">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="{{route('admin.dashboard')}}">الرئيسية</a>
+                                <li class="breadcrumb-item"><a href="{{route('admin.dashboard')}}">{{__('admin/sidebar.Main')}}</a>
                                 </li>
-                                <li class="breadcrumb-item active"> الاقسام الفرعيه
+                                <li class="breadcrumb-item active"> {{__('admin/brand.brand')}}
                                 </li>
                             </ol>
                         </div>
@@ -25,7 +25,7 @@
                         <div class="col-12">
                             <div class="card">
                                 <div class="card-header">
-                                    <h4 class="card-title">جميع الاقسام الفرعيه </h4>
+                                    <h4 class="card-title">{{__('admin/brand.allbrand')}}</h4>
                                     <a class="heading-elements-toggle"><i
                                             class="la la-ellipsis-v font-medium-3"></i></a>
                                     <div class="heading-elements">
@@ -48,42 +48,32 @@
                                             class="table display nowrap table-striped table-bordered scroll-horizontal">
                                             <thead class="">
                                             <tr>
-                                                <th>الاسم </th>
-                                                <th> الاسم بالرابط</th>
-                                                <th>الحالة</th>
-                                                <th>صوره القسم</th>
-                                                <th>الإجراءات</th>
+                                                <th>{{__('admin/brand.brand')}} </th>
+                                                <th> {{__('admin/brand.brand')}}</th>
+                                                <th>{{__('admin/brand.photo')}}</th>
+                                                <th>{{__('admin/brand.procedures')}}</th>
                                             </tr>
                                             </thead>
                                             <tbody>
 
-                                            @isset($categories)
-                                                @foreach($categories as $category)
+                                            @isset($brands)
+                                                @foreach($brands as $brand)
                                                     <tr>
-                                                        <td>{{$category -> name}}</td>
-                                                        <td>{{$category -> slug}}</td>
+                                                        <td>{{$brand -> name}}</td>
+                                                        <td>{{$brand -> getActive()}}</td>
 {{--                                                        <td>{{get_default_lang()}}</td>--}}
-                                                        <td>{{$category -> getActive()}}</td>
-                                                        <td> <img style="width: 150px; height: 100px;" src=""></td>
+
+                                                        <td> <img style="width: 150px; height: 100px;" src="{{$brand->photo}}"></td>
+
                                                         <td>
                                                             <div class="btn-group" role="group"
                                                                  aria-label="Basic example">
-                                                                <a href="{{route('admin.subCategories.edit',$category-> id)}}"
+                                                                <a href="{{route('admin.brands.edit',$brand -> id)}}"
                                                                    class="btn btn-outline-primary btn-min-width box-shadow-3 mr-1 mb-1">تعديل</a>
 
 
-                                                                <a href="{{route('admin.subCategories.delete',$category -> id)}}"
+                                                                <a href="{{route('admin.brands.delete',$brand -> id)}}"
                                                                    class="btn btn-outline-danger btn-min-width box-shadow-3 mr-1 mb-1">حذف</a>
-
-
-{{--                                                                <a href="{{route('admin.mainCategories.status',$category -> id)}}"--}}
-{{--                                                                   class="btn btn-outline-warning btn-min-width box-shadow-3 mr-1 mb-1">--}}
-{{--                                                                    @if($category -> active == 0)--}}
-{{--                                                                        تفعيل--}}
-{{--                                                                    @else--}}
-{{--                                                                        الغاء تفعيل--}}
-{{--                                                                    @endif--}}
-{{--                                                                </a>--}}
 
 
                                                             </div>

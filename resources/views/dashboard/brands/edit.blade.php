@@ -11,9 +11,9 @@
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="">الرئيسية </a>
                                 </li>
-                                <li class="breadcrumb-item"><a href=""> الاقسام الفرعيه </a>
+                                <li class="breadcrumb-item"><a href=""> الاقسام الرئيسية </a>
                                 </li>
-                                <li class="breadcrumb-item active"> تعديل - {{$category -> name}}
+                                <li class="breadcrumb-item active"> تعديل - {{$mainCategory -> name}}
                                 </li>
                             </ol>
                         </div>
@@ -27,7 +27,7 @@
                         <div class="col-md-12">
                             <div class="card">
                                 <div class="card-header">
-                                    <h4 class="card-title" id="basic-layout-form"> تعديل قسم فرعى </h4>
+                                    <h4 class="card-title" id="basic-layout-form"> تعديل قسم رئيسي </h4>
                                     <a class="heading-elements-toggle"><i
                                             class="la la-ellipsis-v font-medium-3"></i></a>
                                     <div class="heading-elements">
@@ -44,12 +44,12 @@
                                 <div class="card-content collapse show">
                                     <div class="card-body">
                                         <form class="form"
-                                              action="{{route('admin.subCategories.update',$category -> id)}}"
+                                              action="{{route('admin.mainCategories.update',$mainCategory -> id)}}"
                                               method="POST"
                                               enctype="multipart/form-data">
                                             @csrf
 
-                                            <input name="id" value="{{$category -> id}}" type="hidden">
+                                            <input name="id" value="{{$mainCategory -> id}}" type="hidden">
 
                                             <div class="form-group">
                                                 <div class="text-center">
@@ -75,31 +75,13 @@
 
                                                 <h4 class="form-section"><i class="ft-home"></i> بيانات القسم </h4>
                                                 <div class="row">
-                                                    <div class="col-md-12">
-                                                        <div class="form-group">
-                                                            <label for="projectinput1"> اختر القسم </label>
-                                                            <select name = "parent_id" class = "select2 form-control">
-                                                                <optgroup label="من فضلك ادخل القسم">
-                                                                    @if($categories && $categories->count()>0)
-                                                                        @foreach($categories as $mainCategory)
-                                                                            <option value= "{{$mainCategory->id}}"
-                                                                            @if($mainCategory->id == $category->parent_id)
-                                                                                selected @endif >
-                                                                                {{$mainCategory-> name}}
-                                                                            </option>
-                                                                        @endforeach
-                                                                    @endif
-                                                                </optgroup>
-                                                            </select>
-                                                        </div>
-                                                    </div>
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="projectinput1"> اسم القسم</label>
                                                             <input type="text" id="name"
                                                                    class="form-control"
                                                                    placeholder="  "
-                                                                   value="{{$category -> name}}"
+                                                                   value="{{$mainCategory -> name}}"
                                                                    name="name">
                                                             @error("name")
                                                             <span class="text-danger"> {{$message}}</span>
@@ -113,7 +95,7 @@
                                                             <input type="text" id="slug"
                                                                    class="form-control"
                                                                    placeholder="  "
-                                                                   value="{{$category -> slug}}"
+                                                                   value="{{$mainCategory -> slug}}"
                                                                    name="slug">
                                                             @error("slug")
                                                             <span class="text-danger"> {{$message}}</span>
@@ -131,7 +113,7 @@
                                                                    name="is_active"
                                                                    id="switcheryColor4"
                                                                    class="switchery" data-color="success"
-                                                                   @if($category -> is_active == 1)checked @endif/>
+                                                                   @if($mainCategory -> active == 1)checked @endif/>
                                                             <label for="switcheryColor4"
                                                                    class="card-title ml-1">الحالة  </label>
 

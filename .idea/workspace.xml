@@ -20,7 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="461c4da6-124d-44e1-b0ae-3704fae21cab" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/public/assets/images/brands/gLeMLaQOa1Ct7l2kPCwwykPCxp2jBC89QmuxXOig.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/brands/qlfla0PNHvvAITHOw82YG4Ijzi6p4LIMTA8vsshT.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/brands/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/brands/index.blade.php" afterDir="false" />
+>>>>>>> a38c985bf4af3dad0b0e621a921f1ed2d6cb2a60
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +36,9 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution />
+    <execution>
+      <executable path="composer" />
+    </execution>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -147,6 +156,7 @@
       <path value="$PROJECT_DIR$/vendor/astrotomic/laravel-translatable" />
       <path value="$PROJECT_DIR$/vendor/mcamara/laravel-localization" />
       <path value="$PROJECT_DIR$/vendor/yajra/laravel-datatables-oracle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php81" />
     </include_path>
   </component>
   <component name="ProjectId" id="1ihJ95u64xsf4s14DmJUEqBRKqV" />
@@ -163,7 +173,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Requests" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/assets/images/brands" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -171,15 +181,16 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\app\Models" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="I:\phpstorm work\store-ecommerce\public\assets\images\brands" />
+      <recent name="I:\phpstorm work\store-ecommerce\resources\views\dashboard\brands" />
       <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\app\Http\Requests" />
       <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\database\seeds" />
       <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\resources\views\dashboard" />
-      <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\app\Http\Controllers\Dashboard" />
-      <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\resources\views\dashboard\categories" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="I:\phpstorm work\store-ecommerce\app\Http\Controllers\Dashboard" />
+      <recent name="D:\xampp\htdocs\php\Laravel projects\ecommerce\app\Models" />
     </key>
   </component>
   <component name="RunManager">
@@ -188,7 +199,7 @@
       <method v="2" />
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -266,13 +277,19 @@
       <workItem from="1648044806394" duration="10456000" />
       <workItem from="1648223311394" duration="7425000" />
       <workItem from="1651750809804" duration="2282000" />
+<<<<<<< HEAD
       <workItem from="1651753428240" duration="2513000" />
       <workItem from="1654260934153" duration="264000" />
+=======
+      <workItem from="1651753428240" duration="2009000" />
+      <workItem from="1651930234286" duration="2811000" />
+      <workItem from="1651935617550" duration="9384000" />
+>>>>>>> a38c985bf4af3dad0b0e621a921f1ed2d6cb2a60
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -289,23 +306,5 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="SHOW_DIRTY_RECURSIVELY" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="277" y="57" key="SettingsEditor" timestamp="1650604467428">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1650604467428" />
-    <state x="478" y="0" width="579" height="824" key="find.popup" timestamp="1648222678867">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="478" y="0" width="579" height="824" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1648222678867" />
-    <state x="410" y="139" width="700" height="530" key="recent.locations.popup" timestamp="1648222680522">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="410" y="139" width="700" height="530" key="recent.locations.popup/0.0.1536.824@0.0.1536.824" timestamp="1648222680522" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1648223032185">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1648223032185" />
   </component>
 </project>
