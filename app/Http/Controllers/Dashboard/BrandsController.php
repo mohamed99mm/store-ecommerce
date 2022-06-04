@@ -27,8 +27,6 @@ class BrandsController extends Controller
 
     public function store(BrandRequest $request)
     {
-       return $request;
-
         try {
             DB::beginTransaction();
             if (!$request->has('is_active')) {
@@ -46,11 +44,13 @@ class BrandsController extends Controller
             $brand->save();
 
             DB::commit();
-            return redirect()->route('admin.brands')->with(['success' =>'تم انشاء ماركه  جديد بنجاح']);
+            return redirect()->route('admin.brands')->with(['success' => 'تم انشاء ماركه جديده بنجاح']);
 
         } catch (\Exception $e) {
+
+            return $e;
             DB::rollBack();
-            return redirect()->route('admin.brands')->with(['error' =>'حدث خطأ برجاء المحاوله لاحقا']);
+            return redirect()->route('admin.brands')->with(['error' =>'حدث خطأ برجاء المحاوله لاحقا ']);
 
         }
     }

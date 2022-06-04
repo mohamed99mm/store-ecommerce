@@ -67,7 +67,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale(),
         ################################### end SubCategories    ############################################
 
         ################################### Brands routes ############################################
-        Route::group(['prefix' => 'brand'],function ()
+        Route::group(['prefix' => 'brands'],function ()
         {
             Route::get('/','BrandsController@index') ->name('admin.brands');
             Route::get('/create','BrandsController@create') ->name('admin.brands.create');

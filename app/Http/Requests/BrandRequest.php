@@ -21,12 +21,15 @@ class BrandRequest extends FormRequest
      *
      * @return array
      */
+
     public function rules()
     {
+
         return [
              'photo'=>'required|mimes:jpg,jpeg,png',
             'name'=>'required',
         ];
     }
+
 
 }

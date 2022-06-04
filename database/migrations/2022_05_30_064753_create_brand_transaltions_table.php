@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateBrandTransaltionTable extends Migration
+class CreateBrandTransaltionsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateBrandTransaltionTable extends Migration
      */
     public function up()
     {
-        Schema::create('brand_translation', function (Blueprint $table) {
+        Schema::create('brand_translations', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('brand_id');
             $table->string('locale');
