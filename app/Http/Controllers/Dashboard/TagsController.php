@@ -3,29 +3,29 @@
 namespace App\Http\Controllers\Dashboard;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\BrandRequest;
-use App\Models\Brand;
+use App\Http\Requests\TagRequest;
+use App\Models\Tag;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 
-class BrandsController extends Controller
+class TagsController extends Controller
 {
     public function index()
     {
-         $brands = Brand::orderBy('id', 'DESC')->paginate(PaginationCount);
-        return view('dashboard.brands.index', compact('brands'));
+         $tags = Tag::orderBy('id', 'DESC')->paginate(PaginationCount);
+        return view('dashboard.tags.index', compact('tags'));
 
     }
 
     public function create()
     {
-        return view('dashboard.brands.create');
+        return view('dashboard.tags.create');
 
     }
 
 
-    public function store(BrandRequest $request)
+    public function store(TagRequest $request)
     {
 
 
