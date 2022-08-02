@@ -5,13 +5,13 @@
         <div class="content-wrapper">
             <div class="content-header row">
                 <div class="content-header-left col-md-6 col-12 mb-2">
-                    <h3 class="content-header-title"> {{__('admin/brand.brand')}} </h3>
+                    <h3 class="content-header-title"> {{__('admin/tags.tag')}} </h3>
                     <div class="row breadcrumbs-top">
                         <div class="breadcrumb-wrapper col-12">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="{{route('admin.dashboard')}}">{{__('admin/sidebar.Main')}}</a>
                                 </li>
-                                <li class="breadcrumb-item active"> {{__('admin/brand.brand')}}
+                                <li class="breadcrumb-item active"> {{__('admin/tags.tag')}}
                                 </li>
                             </ol>
                         </div>
@@ -25,7 +25,7 @@
                         <div class="col-12">
                             <div class="card">
                                 <div class="card-header">
-                                    <h4 class="card-title">{{__('admin/brand.allbrand')}}</h4>
+                                    <h4 class="card-title">{{__('admin/tags.alltag')}}</h4>
                                     <a class="heading-elements-toggle"><i
                                             class="la la-ellipsis-v font-medium-3"></i></a>
                                     <div class="heading-elements">
@@ -45,35 +45,35 @@
                                 <div class="card-content collapse show">
                                     <div class="card-body card-dashboard">
                                         <table
-                                            class="table display nowrap table-striped table-bordered scroll-horizontal">
+                                            class="table display nowrap table-striped table-bordered ">
                                             <thead class="">
                                             <tr>
-                                                <th>{{__('admin/brand.brand')}} </th>
-                                                <th> {{__('admin/brand.brand')}}</th>
-                                                <th>{{__('admin/brand.photo')}}</th>
-                                                <th>{{__('admin/brand.procedures')}}</th>
+                                                <th>{{__('admin/tags.name')}} </th>
+                                                <th> {{__('admin/tags.slug')}}</th>
+                                                <th>{{__('admin/tags.operations')}}</th>
+
                                             </tr>
                                             </thead>
                                             <tbody>
 
-                                            @isset($brands)
-                                                @foreach($brands as $brand)
+                                            @isset($tags)
+                                                @foreach($tags as $tag)
                                                     <tr>
-                                                        <td>{{$brand -> name}}</td>
-                                                        <td>{{$brand -> getActive()}}</td>
+                                                        <td>{{$tag -> name}}</td>
+                                                        <td>{{$tag -> slug}}</td>
 {{--                                                        <td>{{get_default_lang()}}</td>--}}
 
-                                                        <td> <img style="width: 150px; height: 100px;" src="{{$brand->photo}}"></td>
+                                                       <!-- <td> <img style="width: 150px; height: 100px;" src="<$brand->photo}}"></td> -->
 
                                                         <td>
                                                             <div class="btn-group" role="group"
                                                                  aria-label="Basic example">
-                                                                <a href="{{route('admin.brands.edit',$brand -> id)}}"
-                                                                   class="btn btn-outline-primary btn-min-width box-shadow-3 mr-1 mb-1">تعديل</a>
+                                                                <a href="{{route('admin.tags.edit',$tag -> id)}}"
+                                                                   class="btn btn-outline-primary btn-min-width box-shadow-3 mr-1 mb-1">{{__('admin/sidebar.edit')}}</a>
 
 
-                                                                <a href="{{route('admin.brands.delete',$brand -> id)}}"
-                                                                   class="btn btn-outline-danger btn-min-width box-shadow-3 mr-1 mb-1">حذف</a>
+                                                                <a href="{{route('admin.tags.delete',$tag -> id)}}"
+                                                                   class="btn btn-outline-danger btn-min-width box-shadow-3 mr-1 mb-1">{{__('admin/sidebar.delete')}}</a>
 
 
                                                             </div>

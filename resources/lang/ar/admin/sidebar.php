@@ -13,8 +13,8 @@ return [
     'SiteLanguages' => 'لغات الموقع',
     'ShowAll' => 'عرض الكل',
     'AddNewLanguage' => 'اضافه لغه جديده',
-    'MainSections' => 'الاقسام الرئيسيه',
-    'AddNewSection' => 'اضافه قسم رئيسى  جديد',
+    'Sections' => 'الاقسام',
+    'AddNewSection' => 'اضافه قسم   جديد',
     'SubSections' => 'الاقسام الفرعية',
     'AddNewSubSection'=> 'اضافه قسم فرعى جديد',
     'Stores' => 'المتاجر',
@@ -23,7 +23,8 @@ return [
     'AddNewStudent' =>'اضافه طالب',
     'CorrespondenceTickets' => 'تذاكر المراسلات',
     'StudentTickets' => 'تذاكر الطلاب',
-
+    'edit' => 'تعديل',
+    'delete' => 'حذف'
 
 
    ];

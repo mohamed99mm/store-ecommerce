@@ -9,5 +9,8 @@ return [
     'edittag' => 'Edit Tag ',
     'exists' => 'This Tag does not exist',
     'unique'=>'This tag  exists',
+    'slug' => 'slug',
+    'operations' => 'operations'
+
 
 ];

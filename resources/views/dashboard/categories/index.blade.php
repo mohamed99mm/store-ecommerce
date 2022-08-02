@@ -49,6 +49,7 @@
                                             <thead class="">
                                             <tr>
                                                 <th>الاسم </th>
+                                                <th>القسم الرئيسى </th>
                                                 <th> الاسم بالرابط</th>
                                                 <th>الحالة</th>
                                                 <th>صوره القسم</th>
@@ -61,18 +62,22 @@
                                                 @foreach($categories as $category)
                                                     <tr>
                                                         <td>{{$category -> name}}</td>
+                                                        <td>{{$category->_parent->name ?? ''}}</td>
+
+
+
                                                         <td>{{$category -> slug}}</td>
 {{--                                                        <td>{{get_default_lang()}}</td>--}}
                                                         <td>{{$category -> getActive()}}</td>
-                                                        <td> <img style="width: 150px; height: 100px;" src=""></td>
+                                                        <td> <img style="width: 150px; height: 100px;" src="{{$category->photo}}"></td>
                                                         <td>
                                                             <div class="btn-group" role="group"
                                                                  aria-label="Basic example">
-                                                                <a href="{{route('admin.mainCategories.edit',$category -> id)}}"
+                                                                <a href="{{route('admin.Categories.edit',$category -> id)}}"
                                                                    class="btn btn-outline-primary btn-min-width box-shadow-3 mr-1 mb-1">تعديل</a>
 
 
-                                                                <a href="{{route('admin.mainCategories.delete',$category -> id)}}"
+                                                                <a href="{{route('admin.Categories.delete',$category -> id)}}"
                                                                    class="btn btn-outline-danger btn-min-width box-shadow-3 mr-1 mb-1">حذف</a>
 
 

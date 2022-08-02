@@ -9,11 +9,11 @@
                     <div class="row breadcrumbs-top">
                         <div class="breadcrumb-wrapper col-12">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="">الرئيسية </a>
+                                <li class="breadcrumb-item"><a href="">{{__('admin/sidebar.Main')}} </a>
                                 </li>
-                                <li class="breadcrumb-item"><a href=""> الاقسام الرئيسية </a>
+                                <li class="breadcrumb-item"><a href=""> {{__('admin/sidebar.Sections')}}  </a>
                                 </li>
-                                <li class="breadcrumb-item active"> تعديل - {{$mainCategory -> name}}
+                                <li class="breadcrumb-item active">{{__('admin/sidebar.edit')}}- {{$Category -> name}}
                                 </li>
                             </ol>
                         </div>
@@ -27,7 +27,7 @@
                         <div class="col-md-12">
                             <div class="card">
                                 <div class="card-header">
-                                    <h4 class="card-title" id="basic-layout-form"> تعديل قسم رئيسي </h4>
+                                    <h4 class="card-title" id="basic-layout-form"> {{__('admin/sidebar.edit')}}- {{$Category -> name}} </h4>
                                     <a class="heading-elements-toggle"><i
                                             class="la la-ellipsis-v font-medium-3"></i></a>
                                     <div class="heading-elements">
@@ -44,24 +44,24 @@
                                 <div class="card-content collapse show">
                                     <div class="card-body">
                                         <form class="form"
-                                              action="{{route('admin.mainCategories.update',$mainCategory -> id)}}"
+                                              action="{{route('admin.Categories.update',$Category -> id)}}"
                                               method="POST"
                                               enctype="multipart/form-data">
                                             @csrf
 
-                                            <input name="id" value="{{$mainCategory -> id}}" type="hidden">
+                                            <input name="id" value="{{$Category -> id}}" type="hidden">
+                                            <input name ="parent_id" value = "{{$Category->parent_id}}" type ="hidden" >
+                                             <div class="form-group">
+                                                   <div class="text-center">
+                                                       <img
+                                                           src="{{$Category -> photo}}"
+                                                           class="rounded-circle  height-150" alt="صورة القسم  ">
+                                                   </div>
+                                             </div>
+
 
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                    <img
-                                                        src=""
-                                                        class="rounded-circle  height-150" alt="صورة القسم  ">
-                                                </div>
-                                            </div>
-
-
-                                            <div class="form-group">
-                                                <label> صوره القسم </label>
+                                                <label> {{__('admin/Category.photo')}} </label>
                                                 <label id="projectinput7" class="file center-block">
                                                     <input type="file" id="file" name="photo">
                                                     <span class="file-custom"></span>
@@ -70,6 +70,7 @@
                                                 <span class="text-danger">{{$message}}</span>
                                                 @enderror
                                             </div>
+
 
                                             <div class="form-body">
 
@@ -81,7 +82,7 @@
                                                             <input type="text" id="name"
                                                                    class="form-control"
                                                                    placeholder="  "
-                                                                   value="{{$mainCategory -> name}}"
+                                                                   value="{{$Category -> name}}"
                                                                    name="name">
                                                             @error("name")
                                                             <span class="text-danger"> {{$message}}</span>
@@ -95,7 +96,7 @@
                                                             <input type="text" id="slug"
                                                                    class="form-control"
                                                                    placeholder="  "
-                                                                   value="{{$mainCategory -> slug}}"
+                                                                   value="{{$Category -> slug}}"
                                                                    name="slug">
                                                             @error("slug")
                                                             <span class="text-danger"> {{$message}}</span>
@@ -113,15 +114,15 @@
                                                                    name="is_active"
                                                                    id="switcheryColor4"
                                                                    class="switchery" data-color="success"
-                                                                   @if($mainCategory -> active == 1)checked @endif/>
+                                                                   @if($Category -> is_active == 1)checked @endif/>
                                                             <label for="switcheryColor4"
                                                                    class="card-title ml-1">الحالة  </label>
-
                                                             @error("is_active")
                                                             <span class="text-danger">{{$message}} </span>
                                                             @enderror
                                                         </div>
                                                     </div>
+
                                                 </div>
                                             </div>
 
