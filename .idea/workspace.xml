@@ -5,6 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96164722-6188-4c69-8fd4-2210e539c5f7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/store-ecommerce.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/CategoriesController.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/database/migrations/2022_07_30_161342_add_photo_column_to_categories_table.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/assets/images/categories/3B1pOZdQPb15PA2D19e4HgeBoTGgOruI9ETozN7Y.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/assets/images/categories/BMtz3b5UbcqfTYRIjvmqFgGDoOgDbjwb1jl8U0fZ.png" afterDir="false" />
@@ -14,7 +19,7 @@
       <change afterPath="$PROJECT_DIR$/resources/lang/ar/admin/Category.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/resources/lang/en/admin/Category.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/MainCategoriesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/CategoriesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/MainCategoriesController.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/SubCategoriesController.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/TagsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/TagsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Requests/MainCategoryRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/CategoryRequest.php" afterDir="false" />
@@ -251,7 +256,7 @@
       <workItem from="1659189003653" duration="5677000" />
       <workItem from="1659270665204" duration="5771000" />
       <workItem from="1659332114973" duration="5325000" />
-      <workItem from="1659417727264" duration="6023000" />
+      <workItem from="1659417727264" duration="6393000" />
     </task>
     <servers />
   </component>
