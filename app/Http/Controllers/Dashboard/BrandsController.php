@@ -27,6 +27,8 @@ class BrandsController extends Controller
 
     public function store(BrandRequest $request)
     {
+
+
         try {
             DB::beginTransaction();
             if (!$request->has('is_active')) {
@@ -80,7 +82,7 @@ class BrandsController extends Controller
             if ($request->has('photo')) {
                 $image = Str::after($brand->photo, 'assets/');
                 $image = base_path('public/assets/' . $image);
-                unlink($image); //delete from folder
+                 unlink($image); //delete from folder
 
                 $filename = uploadImage('brands', $request->photo);
                 Brand::where('id',$id)->update(['photo'=>$filename]);
@@ -106,6 +108,8 @@ class BrandsController extends Controller
 
 
         } catch (\Exception $e) {
+
+            return $e;
             DB::rollBack();
             return redirect()->route('admin.brands')->with(['error' => 'حدث خطأ برجاء المحاوله لاحقا']);
 

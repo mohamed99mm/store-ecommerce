@@ -13,8 +13,8 @@ return [
     'SiteLanguages' => 'Site Languages',
     'ShowAll' => 'show all',
     'AddNewLanguage' => 'Add new language',
-    'MainSections' => 'Main Sections',
-    'AddNewSection' => 'Add new main section',
+    'Sections' => 'Sections',
+    'AddNewSection' => 'Add new  section',
     'SubSections' => 'Subsections',
     'AddNewSubSection'=> 'Add new Subsection',
     'Stores' => 'Stores',
@@ -23,4 +23,7 @@ return [
     'AddNewStudent' =>'Add new student',
     'CorrespondenceTickets' => 'correspondence tickets',
     'StudentTickets' => 'students tickets',
-   ];
+    'edit' => 'edit',
+    'delete' => 'delete'
+
+];

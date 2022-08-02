@@ -37,12 +37,12 @@ Route::group(['prefix' => LaravelLocalization::setLocale(),
         ################################### Categories routes ############################################
         Route::group(['prefix' => 'main_categories'],function ()
         {
-            Route::get('/','MainCategoriesController@index') ->name('admin.mainCategories');
-            Route::get('/create','MainCategoriesController@create') ->name('admin.mainCategories.create');
-            Route::post('/store','MainCategoriesController@store') ->name('admin.mainCategories.store');
-            Route::get('/edit/{id}','MainCategoriesController@edit') ->name('admin.mainCategories.edit');
-            Route::post('/update/{id}','MainCategoriesController@update') ->name('admin.mainCategories.update');
-            Route::get('/delete/{id}','MainCategoriesController@destroy') ->name('admin.mainCategories.delete');
+            Route::get('/','CategoriesController@index') ->name('admin.Categories');
+            Route::get('/create','CategoriesController@create') ->name('admin.Categories.create');
+            Route::post('/store','CategoriesController@store') ->name('admin.Categories.store');
+            Route::get('/edit/{id}','CategoriesController@edit') ->name('admin.Categories.edit');
+            Route::post('/update/{id}','CategoriesController@update') ->name('admin.Categories.update');
+            Route::get('/delete/{id}','CategoriesController@destroy') ->name('admin.Categories.delete');
 
 
         });
@@ -50,21 +50,6 @@ Route::group(['prefix' => LaravelLocalization::setLocale(),
 
         ################################### end Categories    ############################################
 
-        ################################### SubCategories routes ############################################
-        Route::group(['prefix' => 'sub_categories'],function ()
-        {
-            Route::get('/','SubCategoriesController@index') ->name('admin.subCategories');
-            Route::get('/create','SubCategoriesController@create') ->name('admin.subCategories.create');
-            Route::post('/store','SubCategoriesController@store') ->name('admin.subCategories.store');
-            Route::get('/edit/{id}','SubCategoriesController@edit') ->name('admin.subCategories.edit');
-            Route::post('/update/{id}','SubCategoriesController@update') ->name('admin.subCategories.update');
-            Route::get('/delete/{id}','SubCategoriesController@destroy') ->name('admin.subCategories.delete');
-
-
-        });
-
-
-        ################################### end SubCategories    ############################################
 
         ################################### Brands routes ############################################
         Route::group(['prefix' => 'brands'],function ()
@@ -79,6 +64,21 @@ Route::group(['prefix' => LaravelLocalization::setLocale(),
 
         });
         ################################### end Brands    ############################################
+
+
+        ################################### tags routes ############################################
+        Route::group(['prefix' => 'tags'],function ()
+        {
+            Route::get('/','TagsController@index') ->name('admin.tags');
+            Route::get('/create','TagsController@create') ->name('admin.tags.create');
+            Route::post('/store','TagsController@store') ->name('admin.tags.store');
+            Route::get('/edit/{id}','TagsController@edit') ->name('admin.tags.edit');
+            Route::post('/update/{id}','TagsController@update') ->name('admin.tags.update');
+            Route::get('/delete/{id}','TagsController@destroy') ->name('admin.tags.delete');
+
+
+        });
+        ################################### end tags    ############################################
     });
     Route::group(['prefix'=>'admin','namespace'=>'Dashboard','middleware'=>'guest:admin'],function()
     {

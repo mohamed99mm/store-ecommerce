@@ -11,9 +11,9 @@
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="">{{__('admin/sidebar.Main')}} </a>
                                 </li>
-                                <li class="breadcrumb-item"><a href=""> {{__('admin/sidebar.Sections')}}  </a>
+                                <li class="breadcrumb-item"><a href=""> {{__('admin/tags.tag')}} </a>
                                 </li>
-                                <li class="breadcrumb-item active">{{__('admin/sidebar.edit')}}- {{$Category -> name}}
+                                <li class="breadcrumb-item active">{{__('admin/tags.edittag')}}  - {{$tag -> name}}
                                 </li>
                             </ol>
                         </div>
@@ -27,7 +27,7 @@
                         <div class="col-md-12">
                             <div class="card">
                                 <div class="card-header">
-                                    <h4 class="card-title" id="basic-layout-form"> {{__('admin/sidebar.edit')}}- {{$Category -> name}} </h4>
+                                    <h4 class="card-title" id="basic-layout-form"> {{__('admin/tags.edittag')}} </h4>
                                     <a class="heading-elements-toggle"><i
                                             class="la la-ellipsis-v font-medium-3"></i></a>
                                     <div class="heading-elements">
@@ -44,45 +44,44 @@
                                 <div class="card-content collapse show">
                                     <div class="card-body">
                                         <form class="form"
-                                              action="{{route('admin.Categories.update',$Category -> id)}}"
+                                              action="{{route('admin.tags.update',$tag -> id)}}"
                                               method="POST"
                                               enctype="multipart/form-data">
                                             @csrf
 
-                                            <input name="id" value="{{$Category -> id}}" type="hidden">
-                                            <input name ="parent_id" value = "{{$Category->parent_id}}" type ="hidden" >
-                                             <div class="form-group">
-                                                   <div class="text-center">
-                                                       <img
-                                                           src="{{$Category -> photo}}"
-                                                           class="rounded-circle  height-150" alt="صورة القسم  ">
-                                                   </div>
-                                             </div>
+                                            <input name="id" value="{{$tag -> id}}" type="hidden">
+
+{{--                                            <div class="form-group">--}}
+{{--                                                <div class="text-center">--}}
+{{--                                                    <img--}}
+{{--                                                        src="{{$brand -> photo}}"--}}
+{{--                                                        class="rounded-circle  height-150" alt="صورة القسم  ">--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
 
 
-                                            <div class="form-group">
-                                                <label> {{__('admin/Category.photo')}} </label>
-                                                <label id="projectinput7" class="file center-block">
-                                                    <input type="file" id="file" name="photo">
-                                                    <span class="file-custom"></span>
-                                                </label>
-                                                @error('photo')
-                                                <span class="text-danger">{{$message}}</span>
-                                                @enderror
-                                            </div>
-
+{{--                                            <div class="form-group">--}}
+{{--                                                <label> {{__('admin/brand.photo')}} </label>--}}
+{{--                                                <label id="projectinput7" class="file center-block">--}}
+{{--                                                    <input type="file" id="file" name="photo">--}}
+{{--                                                    <span class="file-custom"></span>--}}
+{{--                                                </label>--}}
+{{--                                                @error('photo')--}}
+{{--                                                <span class="text-danger">{{$message}}</span>--}}
+{{--                                                @enderror--}}
+{{--                                            </div>--}}
 
                                             <div class="form-body">
 
-                                                <h4 class="form-section"><i class="ft-home"></i> بيانات القسم </h4>
+                                                <h4 class="form-section"><i class="ft-home"></i> {{__('admin/tags.taginfo')}} </h4>
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <label for="projectinput1"> اسم القسم</label>
+                                                            <label for="projectinput1"> {{__('admin/tags.name')}}</label>
                                                             <input type="text" id="name"
                                                                    class="form-control"
                                                                    placeholder="  "
-                                                                   value="{{$Category -> name}}"
+                                                                   value="{{$tag -> name}}"
                                                                    name="name">
                                                             @error("name")
                                                             <span class="text-danger"> {{$message}}</span>
@@ -92,36 +91,32 @@
 
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <label for="projectinput1"> الاسم بالرابط</label>
+                                                            <label for="projectinput2"> {{__('admin/tags.slug')}}</label>
                                                             <input type="text" id="slug"
                                                                    class="form-control"
                                                                    placeholder="  "
-                                                                   value="{{$Category -> slug}}"
+                                                                   value="{{$tag -> slug}}"
                                                                    name="slug">
                                                             @error("slug")
                                                             <span class="text-danger"> {{$message}}</span>
                                                             @enderror
                                                         </div>
                                                     </div>
+{{--                                                    <div class="col-md-6">--}}
+{{--                                                        <div class="form-group mt-1">--}}
+{{--                                                            <input type="checkbox" value="1"--}}
+{{--                                                                   name="is_active"--}}
+{{--                                                                   id="switcheryColor4"--}}
+{{--                                                                   class="switchery" data-color="success"--}}
+{{--                                                                   @if($brand -> is_active == 1)checked @endif/>--}}
+{{--                                                            <label for="switcheryColor4"--}}
+{{--                                                                   class="card-title ml-1">{{__('admin/brand.status')}} </label>--}}
 
-
-
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-6">
-                                                        <div class="form-group mt-1">
-                                                            <input type="checkbox" value="1"
-                                                                   name="is_active"
-                                                                   id="switcheryColor4"
-                                                                   class="switchery" data-color="success"
-                                                                   @if($Category -> is_active == 1)checked @endif/>
-                                                            <label for="switcheryColor4"
-                                                                   class="card-title ml-1">الحالة  </label>
-                                                            @error("is_active")
-                                                            <span class="text-danger">{{$message}} </span>
-                                                            @enderror
-                                                        </div>
-                                                    </div>
+{{--                                                            @error("is_active")--}}
+{{--                                                            <span class="text-danger">{{$message}} </span>--}}
+{{--                                                            @enderror--}}
+{{--                                                        </div>--}}
+{{--                                                    </div>--}}
 
                                                 </div>
                                             </div>
@@ -130,10 +125,10 @@
                                             <div class="form-actions">
                                                 <button type="button" class="btn btn-warning mr-1"
                                                         onclick="history.back();">
-                                                    <i class="ft-x"></i> تراجع
+                                                    <i class="ft-x"></i> {{__('admin/edit.Back')}}
                                                 </button>
                                                 <button type="submit" class="btn btn-primary">
-                                                    <i class="la la-check-square-o"></i> تحديث
+                                                    <i class="la la-check-square-o"></i>{{__('admin/edit.Save')}}
                                                 </button>
                                             </div>
                                         </form>

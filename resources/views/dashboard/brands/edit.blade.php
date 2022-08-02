@@ -114,7 +114,7 @@
                                                     <i class="ft-x"></i> {{__('admin/edit.Back')}}
                                                 </button>
                                                 <button type="submit" class="btn btn-primary">
-                                                    <i class="la la-check-square-o"></i>{{__('admin/edit.Save')}}
+                                                    <i class="la la-check-square-o"></i>
                                                 </button>
                                             </div>
                                         </form>
