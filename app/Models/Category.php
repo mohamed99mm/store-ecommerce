@@ -19,8 +19,7 @@ class Category extends Model
 
     protected $hidden=['translations'];
 
-    protected $casts = ['is_active'=>'boolean',
-        ];
+    protected $casts = ['is_active'=>'boolean',];
 
 
     public function scopeParent($query)

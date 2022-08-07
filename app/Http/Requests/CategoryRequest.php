@@ -2,7 +2,9 @@
 
 namespace App\Http\Requests;
 
+use App\Http\Enumerations\CategoryType;
 use Illuminate\Foundation\Http\FormRequest;
+use phpDocumentor\Reflection\Types\Integer;
 
 class CategoryRequest extends FormRequest
 {
@@ -26,7 +28,7 @@ class CategoryRequest extends FormRequest
         return [
             'name' => 'required',
             'type'=>'required_without:id|in:1,2',
-            'photo'=>'required_without:id|mimes:jpg,jpeg,png',
+            'photo'=>'mimes:jpg,jpeg,png',
             'slug' => 'required|unique:categories,slug,'.$this->id,
         ];
     }
