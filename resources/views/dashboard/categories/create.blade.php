@@ -46,6 +46,7 @@
                                               method="POST"
                                               enctype="multipart/form-data">
                                             @csrf
+                                            <input name="id" value="" type="hidden">
                                             <div class="form-group">
                                                 <label> {{__('admin/Category.photo')}} </label>
                                                 <label for="projectinput7" class="file center-block">

@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Dashboard;
 
 use App\Http\Controllers\Controller;
 
+use App\Http\Enumerations\CategoryType;
 use App\Models\Category;
 use Illuminate\Http\Request;
 use App\Http\Requests\CategoryRequest;;
@@ -59,14 +60,14 @@ class CategoriesController extends Controller
 
          // if the user choose main category then we must remove parent id fromm the request
 
-         if($request->type ==1)
+         if($request->type ==CategoryType::MainCategory)
              {
                  $request->request->add(['parent_id' => null]);
              }
 
          //if he choose sub category then we must add parent id in the request
 
-         if($request->type == 2)
+         if($request->type == CategoryType::SubCategory)
          {
              $request->request->add(['parent_id']);
          }
@@ -83,7 +84,9 @@ class CategoriesController extends Controller
 
          $category->name = $request->name;
          $category->slug = $request->slug;
-         $category->photo = $filename;
+         if($request->photo!=null) {
+             $category->photo = $filename;
+         }
          $category->is_active = $request->is_active;
          $category->parent_id = $request->parent_id;
          $category->save();
